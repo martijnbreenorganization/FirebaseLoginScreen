@@ -11,8 +11,9 @@ import certifi
 from kivymd.toast import toast
 
 # Python imports
+from pathlib import Path
 import sys
-sys.path.append("/".join(x for x in __file__.split("/")[:-1]))
+sys.path.append(str(Path(__file__).parent))
 from json import dumps
 import os.path
 
